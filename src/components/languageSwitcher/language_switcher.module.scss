@@ -2,14 +2,18 @@
   position: relative;
 }
 
+.lang_text{
+  width: 30px;
+}
+
 .current_container{
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0.7rem 1rem;
-  width: 100px;
   cursor: pointer;
   gap: 0.5rem;
+  transition: color 0.3s ease;
 
   &:hover{
     color: #00cae2;
@@ -29,7 +33,7 @@
   width: 15px;
   height: auto;
   margin-left: 0.6rem;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;;
 }
 
 .arrow.open {
@@ -54,7 +58,7 @@
   gap: 0.5rem;
   font-weight: 400;
   padding: 0.7rem 1rem;
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease, color 0.3s ease;
 
   &:hover{
     opacity: 0.85;

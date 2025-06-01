@@ -1,13 +1,19 @@
 import React from 'react';
-import './App.css';
+import styles from  './app.module.scss';
 import {Intro} from "../sections/intro/Intro";
 import {TopBar} from "../components/topbar/TopBar";
+import {About} from "../sections/about/About";
+import {TechStack} from "../sections/techStack/TechStack";
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.app}>
         <TopBar />
-        <Intro />
+        <div className={styles.container}>
+            <Intro />
+            <About />
+            <TechStack />
+        </div>
     </div>
   );
 }

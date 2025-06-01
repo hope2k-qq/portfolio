@@ -4,7 +4,7 @@ import styles from './intro.module.scss'
 export const Intro = () => {
     return (
         <section id="intro" className={styles.div}>
-            <div>
+            <div className={styles.text_container}>
                 <h1 className={styles.text}>FRONT-END</h1>
                 <h1 className={styles.text}>DEVELOPER</h1>
                 <button

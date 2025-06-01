@@ -20,7 +20,7 @@ const LanguageSwitcher = () => {
         <div className={styles.div}>
             <div className={styles.current_container} onClick={() => setOpen(!open)}>
                 <img src={CurrentIcon} className={styles.icon} alt={"currentIcon"}/>
-                <div>{currentLang}</div>
+                <div className={styles.lang_text}>{currentLang}</div>
                 <ArrowDown className={`${styles.arrow} ${open ? styles.open : ''}`} />
             </div>
 
@@ -28,11 +28,11 @@ const LanguageSwitcher = () => {
                 <div className={styles.list}>
                     <div className={styles.list_container} onClick={() => changeLanguage('en')}>
                         <img className={styles.icon} src={"/en.svg"} alt={"en"} />
-                        <div>EN</div>
+                        <div className={styles.lang_text}>EN</div>
                     </div>
                     <div className={styles.list_container} onClick={() => changeLanguage('uk')}>
                         <img className={styles.icon} src={"/uk.svg"} alt={"uk"}/>
-                        <div>UA</div>
+                        <div className={styles.lang_text}>UA</div>
                     </div>
                 </div>
             )}
