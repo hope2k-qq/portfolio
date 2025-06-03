@@ -4,6 +4,7 @@ import {Intro} from "../sections/intro/Intro";
 import {TopBar} from "../components/topbar/TopBar";
 import {About} from "../sections/about/About";
 import {TechStack} from "../sections/techStack/TechStack";
+import {Projects} from "../sections/projects/Projects";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
             <Intro />
             <About />
             <TechStack />
+            <Projects />
         </div>
     </div>
   );

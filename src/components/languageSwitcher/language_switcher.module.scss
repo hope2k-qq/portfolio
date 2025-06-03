@@ -16,9 +16,9 @@
   transition: color 0.3s ease;
 
   &:hover{
-    color: #00cae2;
+    color: #ff5722;
     > svg{
-      color: #00cae2;
+      color: #ff5722;
     }
   }
 }
@@ -63,7 +63,7 @@
   &:hover{
     opacity: 0.85;
     cursor: pointer;
-    color: #00cae2;
+    color: #ff5722;
   }
 }
 

@@ -1,12 +1,24 @@
 import React from 'react';
 import styles from './intro.module.scss'
 
+const AnimatedText: React.FC<{ text: string; className?: string }> = ({ text, className }) => {
+    return (
+        <h1 className={className}>
+            {text.split('').map((char, idx) => (
+                <span key={idx} className={styles.letter}>
+          {char === ' ' ? '\u00A0' : char}
+        </span>
+            ))}
+        </h1>
+    );
+};
+
 export const Intro = () => {
     return (
         <section id="intro" className={styles.div}>
             <div className={styles.text_container}>
-                <h1 className={styles.text}>FRONT-END</h1>
-                <h1 className={styles.text}>DEVELOPER</h1>
+                <AnimatedText text="FRONT-END" className={styles.text} />
+                <AnimatedText text="DEVELOPER" className={styles.text} />
                 <button
                     className={styles.button_github}
                     onClick={() => window.open('https://github.com/hope2k-qq', '_blank')}

@@ -1,0 +1,64 @@
+.projects_text{
+  color: #141414;
+  font-weight: bold;
+  font-size: 3.2rem;
+  margin: 4rem 0 6rem 0;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.grid > :nth-last-child(1):nth-child(odd) {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  width: 50%;
+}
+
+.card {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.card_name{
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.card_container{
+  max-width: 100%;
+  width: 100%;
+  padding: 1.2rem 2em;
+  box-sizing: border-box;
+}
+
+.card_description{
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #ff5722;
+  margin: 1rem 0;
+  border-radius: 2px;
+}
+
+
+
+
+.image {
+  width: 100%;
+  height: auto;
+}
