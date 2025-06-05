@@ -1,0 +1,63 @@
+.footer{
+  margin: 2.3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.container_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  &:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ff5722;
+    transition: height 0.5s ease;
+    z-index: 0;
+  }
+}
+
+.container_icon:hover::after {
+  height: 100%;
+}
+
+.container_icon:hover .icon {
+  fill: white;
+}
+
+.container_icon:hover .text {
+  color: white;
+}
+
+.container_icon > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.icon{
+  width: 2rem;
+  height: 2rem;
+  fill: #ff5722;
+  transition: fill 0.5s ease;
+}
+
+.text{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #ff5722;
+  transition: color 0.5s ease;
+}

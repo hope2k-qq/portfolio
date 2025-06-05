@@ -5,6 +5,7 @@ import {TopBar} from "../components/topbar/TopBar";
 import {About} from "../sections/about/About";
 import {TechStack} from "../sections/techStack/TechStack";
 import {Projects} from "../sections/projects/Projects";
+import {Footer} from "../components/footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <TechStack />
             <Projects />
         </div>
+        <Footer />
     </div>
   );
 }
