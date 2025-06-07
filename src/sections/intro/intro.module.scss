@@ -15,17 +15,6 @@
   font-weight: bold;
 }
 
-.letter {
-  display: inline-block;
-  transition: transform 0.3s ease, color 0.3s ease;
-  cursor: default;
-}
-
-.letter:hover {
-  transform: translateY(-10px);
-  color: #ff5722;
-}
-
 .text_container{
   display: flex;
   align-items: center;

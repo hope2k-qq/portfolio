@@ -1,13 +1,16 @@
 import React from 'react';
 import styles from './about.module.scss'
+import {useTranslation} from "react-i18next";
 
 export const About = () => {
+    const { t } = useTranslation();
+
     return (
         <section id="about" className={styles.div}>
-            <h1 className={styles.about_text}>Про мене</h1>
-            <p className={styles.text}>Мене звати Антон, мені 19 років. Я починаючий Frontend-розробник з України, наразі проживаю в Брно, Чехія.</p>
-            <p className={styles.text}>Створюю сучасні веб-сайти з використанням React та TypeScript – від адаптивної верстки до реалізації логіки інтерфейсу.</p>
-            <p className={styles.text}>Шукаю першу роботу, щоб отримати свій перший досвід та розвиватися як розробник.</p>
+            <h1 className={styles.about_text}>{t("about_me")}</h1>
+            <p className={styles.text}>{t("about_me_text1")}</p>
+            <p className={styles.text}>{t("about_me_text2")}</p>
+            <p className={styles.text}>{t("about_me_text3")}</p>
         </section>
     );
 };

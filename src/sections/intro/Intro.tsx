@@ -1,17 +1,7 @@
 import React from 'react';
 import styles from './intro.module.scss'
+import {AnimatedText} from "./components/AnimatedText";
 
-const AnimatedText: React.FC<{ text: string; className?: string }> = ({ text, className }) => {
-    return (
-        <h1 className={className}>
-            {text.split('').map((char, idx) => (
-                <span key={idx} className={styles.letter}>
-          {char === ' ' ? '\u00A0' : char}
-        </span>
-            ))}
-        </h1>
-    );
-};
 
 export const Intro = () => {
     return (

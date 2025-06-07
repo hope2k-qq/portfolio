@@ -1,4 +1,21 @@
 {
   "name": "Anton",
-  "lastname": "Kozakevych"
+  "lastname": "Kozakevych",
+
+  "about_me": "About Me",
+  "about_me_text1": "My name is Anton, I am 19 years old. I am a beginner Frontend developer from Ukraine, currently living in Brno, Czech Republic",
+  "about_me_text2": "I create modern websites using React and TypeScript — from responsive layouts to implementing interface logic",
+  "about_me_text3": "I am looking for my first job to gain experience and grow as a developer",
+
+  "my_stack": "My stack",
+  "tools_more": "Tools and more",
+
+  "projects": "Projects",
+  "stack": "Stack",
+  "view_code": "View the code",
+  "see_live": "See it live",
+
+  "mewee_description": "Website - Social Network (Team Graduation Project)",
+  "portfolio_description": "My Portfolio Website",
+  "wodota_description": "My main project is a custom Dota 2 game website, built entirely from scratch by myself."
 }

@@ -1,28 +1,13 @@
 import React from 'react';
 import styles from './tech_stack.module.scss';
-
-const techItems = [
-    { name: 'React', icon: '/react.svg' },
-    { name: 'TypeScript', icon: '/typescript.svg' },
-    { name: 'SCSS', icon: '/scss.svg' },
-    { name: 'CSS3', icon: '/css.svg' },
-    { name: 'React Router', icon: '/react_router.svg' },
-    { name: 'Axios', icon: '/axios.svg' },
-    { name: 'HTML5', icon: '/html5.svg' },
-    { name: 'JavaScript', icon: '/javascript.svg' },
-];
-
-const toolsItems = [
-    { name: 'WebStorm', icon: '/webstorm.svg' },
-    { name: 'JetBrains Rider', icon: '/jetbrains_rider.svg' },
-    { name: 'Git', icon: '/git.svg' },
-    { name: 'Netlify', icon: '/netlify.svg' },
-];
+import {useTranslation} from "react-i18next";
+import { techItems, toolsItems } from '../../data/techToolsData';
 
 export const TechStack = () => {
+    const { t } = useTranslation();
     return (
         <section id="tech_stack" className={styles.div}>
-            <h1 className={styles.stack_text}>Мій стек</h1>
+            <h1 className={styles.stack_text}>{t("my_stack")}</h1>
             <div className={styles.grid}>
                 {techItems.map((item) => (
                     <div key={item.name} className={styles.card}>
@@ -32,7 +17,7 @@ export const TechStack = () => {
                 ))}
             </div>
 
-            <h2 className={styles.tools_text}>Інструменти і прочее</h2>
+            <h2 className={styles.tools_text}>{t("tools_more")}</h2>
             <div className={styles.grid}>
                 {toolsItems.map((item) => (
                     <div key={item.name} className={styles.card}>
