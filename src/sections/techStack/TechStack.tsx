@@ -7,20 +7,20 @@ export const TechStack = () => {
     const { t } = useTranslation();
     return (
         <section id="tech_stack" className={styles.div}>
-            <h1 className={styles.stack_text}>{t("my_stack")}</h1>
+            <h2 className={styles.stack_text}>{t("my_stack")}</h2>
             <div className={styles.grid}>
                 {techItems.map((item) => (
-                    <div key={item.name} className={styles.card}>
+                    <div key={`tech-${item.name}`} className={styles.card}>
                         <img src={item.icon} alt={item.name} className={styles.icon}/>
                         <p>{item.name}</p>
                     </div>
                 ))}
             </div>
 
-            <h2 className={styles.tools_text}>{t("tools_more")}</h2>
+            <h3 className={styles.tools_text}>{t("tools_more")}</h3>
             <div className={styles.grid}>
                 {toolsItems.map((item) => (
-                    <div key={item.name} className={styles.card}>
+                    <div key={`tool-${item.name}`} className={styles.card}>
                         <img src={item.icon} alt={item.name} className={styles.icon}/>
                         <p>{item.name}</p>
                     </div>

@@ -9,15 +9,15 @@ export const Footer = () => {
         <footer className={styles.footer}>
             <div className={styles.container_icon}>
                 <GitHubIcon className={styles.icon}/>
-                <div className={styles.text}>GitHub</div>
+                <span className={styles.text}>GitHub</span >
             </div>
             <div className={styles.container_icon}>
                 <DiplomaIcon className={styles.icon}/>
-                <div className={styles.text}>Diploma</div>
+                <span className={styles.text}>Diploma</span >
             </div>
             <div className={styles.container_icon}>
                 <TelegramIcon className={styles.icon}/>
-                <div className={styles.text}>Telegram</div>
+                <span className={styles.text}>Telegram</span >
             </div>
         </footer>
     );

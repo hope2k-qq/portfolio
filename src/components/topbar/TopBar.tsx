@@ -16,17 +16,17 @@ export const TopBar = () => {
                     <div>{t("lastname")}</div>
                 </div>
             </div>
-            <div className={styles.right_container}>
+            <nav className={styles.right_container}>
                 <div className={styles.icons_container}>
-                    <a href="https://t.me/hope88k" target="_blank" rel="noopener noreferrer">
+                    <a href="https://t.me/hope88k" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
                         <TelegramIcon className={styles.icon}/>
                     </a>
-                    <a href="https://github.com/hope2k-qq" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/hope2k-qq" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <GitHubIcon className={styles.icon}/>
                     </a>
                 </div>
                 <LanguageSwitcher/>
-            </div>
+            </nav>
         </header>
     );
 };

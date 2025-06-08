@@ -11,9 +11,9 @@ export const Projects = () => {
 
     return (
         <section id="projects" className={styles.div}>
-            <h1 className={styles.projects_text}>{t("projects")}</h1>
+            <h2 className={styles.projects_text}>{t("projects")}</h2>
             <div className={styles.grid}>
-                {projectsItems.map((item) => (
+            {projectsItems.map((item) => (
                     <div key={item.name} className={styles.card}>
                         <img src={item.image} alt={item.name} className={styles.image}/>
                         <div className={styles.card_container}>
@@ -24,7 +24,7 @@ export const Projects = () => {
                                 <h3 className={styles.stack_name}>{t("stack")}</h3>
                                 <ul className={styles.stack_list}>
                                     {item.stack.map((tech) => (
-                                        <li key={tech} className={styles.stack_item}>{tech}</li>
+                                        <li key={`${item.name}-${tech}`} className={styles.stack_item}>{tech}</li>
                                     ))}
                                 </ul>
                             </div>
@@ -33,18 +33,20 @@ export const Projects = () => {
                                     <button
                                         className={styles.button}
                                         onClick={() => window.open(item.gitLink, '_blank', 'noopener,noreferrer')}
+                                        aria-label="View code on GitHub"
                                     >
                                         <GitHubIcon className={styles.button_icon}/>
-                                        <div className={styles.button_text}>{t("view_code")}</div>
+                                        <span className={styles.button_text}>{t("view_code")}</span>
                                     </button>
                                 )}
                                 {item.liveLink && (
                                     <button
                                         className={styles.button}
                                         onClick={() => window.open(item.liveLink, '_blank', 'noopener,noreferrer')}
+                                        aria-label="See it live project"
                                     >
                                         <ExternalLinkIcon className={styles.button_icon} />
-                                        <div className={styles.button_text}>{t("see_live")}</div>
+                                        <span className={styles.button_text}>{t("see_live")}</span>
                                     </button>
                                 )}
                             </div>

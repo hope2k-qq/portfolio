@@ -12,11 +12,12 @@ export const Intro = () => {
                 <button
                     className={styles.button_github}
                     onClick={() => window.open('https://github.com/hope2k-qq', '_blank')}
+                    aria-label="Open GitHub profile in new tab"
                 >
                     github
                 </button>
             </div>
-            <img src={"/pngegg.png"} alt={"intro_img"}/>
+            <img src={"/intro.png"} alt={"Developer illustration"}/>
         </section>
     );
 };

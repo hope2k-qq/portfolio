@@ -7,7 +7,7 @@ export const About = () => {
 
     return (
         <section id="about" className={styles.div}>
-            <h1 className={styles.about_text}>{t("about_me")}</h1>
+            <h2 className={styles.about_text}>{t("about_me")}</h2>
             <p className={styles.text}>{t("about_me_text1")}</p>
             <p className={styles.text}>{t("about_me_text2")}</p>
             <p className={styles.text}>{t("about_me_text3")}</p>
