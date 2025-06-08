@@ -18,7 +18,7 @@ export const Projects = () => {
                         <img src={item.image} alt={item.name} className={styles.image}/>
                         <div className={styles.card_container}>
                             <div className={styles.card_content}>
-                                <h2 className={styles.card_name}>{item.name}</h2>
+                                <h3 className={styles.card_name}>{item.name}</h3>
                                 <p className={styles.card_description}>{item.description}</p>
                                 <div className={styles.line}></div>
                                 <h3 className={styles.stack_name}>{t("stack")}</h3>

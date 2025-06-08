@@ -5,7 +5,7 @@ import {AnimatedText} from "./components/AnimatedText";
 
 export const Intro = () => {
     return (
-        <section id="intro" className={styles.div}>
+        <section id="intro" className={styles.div} >
             <div className={styles.text_container}>
                 <AnimatedText text="FRONT-END" className={styles.text} />
                 <AnimatedText text="DEVELOPER" className={styles.text} />
@@ -17,7 +17,7 @@ export const Intro = () => {
                     github
                 </button>
             </div>
-            <img src={"/intro.png"} alt={"Developer illustration"}/>
+            <img src={"/intro.png"} alt={"Developer illustration"} className={styles.image}/>
         </section>
     );
 };

@@ -10,6 +10,38 @@
   color: #141414;
   font-weight: 500;
   font-size: 1.3rem;
-  text-align: start;
   margin: 12px 0;
+  text-align: center;
+}
+
+
+@media (max-width: 1200px) {
+  .about_text{
+    font-size: 2.8rem;
+    margin: 7rem 0 2rem 0;
+  }
+  .text{
+    font-size: 1.2rem;
+    margin: 9px 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .text_container{
+    align-items: center;
+  }
+  .text{
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .about_text{
+    font-size: 2.4rem;
+    margin: 6rem 0 1.5rem 0;
+  }
+  .text{
+    font-size: 1.1rem;
+    margin: 5px 0;
+  }
 }

@@ -67,3 +67,26 @@
   }
 }
 
+@media (max-width: 1200px){
+  .arrow{
+    margin-left: 0.3rem;
+  }
+}
+
+@media (max-width: 800px){
+  .current_container{
+    padding: 0.7rem 0.5rem;
+  }
+  .lang_text{
+    width: 20px;
+    font-size: 0.9rem;
+  }
+  .arrow{
+    width: 12px;
+    margin-left: 0;
+  }
+  .list_container{
+    padding: 0.7rem 0.5rem;
+  }
+}
+

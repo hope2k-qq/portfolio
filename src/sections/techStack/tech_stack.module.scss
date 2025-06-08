@@ -2,7 +2,7 @@
   color: #141414;
   font-weight: bold;
   font-size: 3.2rem;
-  margin: 4rem 0 6rem 0;
+  margin: 5.5rem 0 6rem 0;
   text-align: center;
 }
 
@@ -15,7 +15,6 @@
 }
 
 .div {
-  padding: 2rem;
   text-align: center;
 }
 
@@ -38,4 +37,36 @@
   width: 48px;
   height: 48px;
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  .stack_text{
+    font-size: 2.8rem;
+    margin: 4rem 0 2.5rem 0;
+  }
+  .tools_text{
+    font-size: 1.5rem;
+    margin: 3.5rem 0 3rem 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .stack_text{
+    font-size: 2.4rem;
+  }
+  .tools_text{
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .grid {
+    gap: 1rem;
+  }
 }

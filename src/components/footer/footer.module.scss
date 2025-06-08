@@ -1,10 +1,12 @@
 .footer{
   margin-top: 2.3rem;
   margin-bottom: 1.3rem;
+  padding: 0 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  user-select: none;
 }
 
 .container_icon {
@@ -61,4 +63,23 @@
   font-weight: 500;
   color: #ff5722;
   transition: color 0.5s ease;
+}
+
+@media (max-width: 600px){
+  .footer{
+    gap: 1rem;
+  }
+  .icon{
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .text{
+    font-size: 1rem;
+  }
+  .container_icon {
+    padding: 0.4rem;
+    &:after{
+      height: 2px;
+    }
+  }
 }

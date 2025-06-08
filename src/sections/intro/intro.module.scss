@@ -38,3 +38,45 @@
     cursor: pointer;
   }
 }
+
+.image{
+  width: 38rem;
+}
+
+@media (max-width: 1250px){
+  .image{
+    width: 30rem;
+  }
+  .div{
+    padding-top: 3.5rem;
+  }
+  .text{
+    font-size: 3.8rem;
+  }
+  .button_github{
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    padding: 0.5rem 3.5rem;
+  }
+}
+
+@media (max-width: 1000px){
+  .div{
+    justify-content: center;
+    padding-top: 8rem;
+  }
+  .image{
+    display: none;
+  }
+}
+
+@media (max-width: 800px){
+  .text{
+    font-size: 3.2rem;
+  }
+  .button_github{
+    margin-top: 1.8rem;
+    font-size: 1.6rem;
+    padding: 0.5rem 3rem;
+  }
+}

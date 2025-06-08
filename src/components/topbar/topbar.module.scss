@@ -2,8 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 12rem;
+  padding: 2rem 5rem;
   user-select: none;
+  margin: 0 auto;
+  max-width: 1500px;
 }
 
 .logo_container{
@@ -51,3 +53,45 @@
   justify-content: center;
   gap: 2rem;
 }
+
+@media (max-width: 1400px) {
+  .header{
+    padding: 2rem 3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header{
+    padding: 1.5rem 2rem;
+  }
+  .right_container{
+    gap: 0.5rem;
+  }
+  .icons_container{
+    gap: 0.3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo{
+    width: 60px;
+  }
+  .name_container{
+    font-size: 1rem;
+  }
+  .icon{
+    width: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header{
+    padding: 0.7rem 1rem;
+  }
+}
+@media (max-width: 450px) {
+  .header{
+    padding: 0.4rem 0.7rem;
+  }
+}
+
