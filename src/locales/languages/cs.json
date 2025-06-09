@@ -1,0 +1,26 @@
+{
+  "name": "Anton",
+  "lastname": "Kozakevych",
+
+  "about_me": "O mně",
+  "about_me_text1": "Jmenuji se Anton, je mi 19 let. Jsem začínající frontendový vývojář z Ukrajiny, momentálně žiji v Brně, Česká republika",
+  "about_me_text2": "Vytvářím moderní webové stránky pomocí Reactu a TypeScriptu — od responzivního rozvržení po implementaci logiky rozhraní",
+  "about_me_text3": "Hledám svou první práci, abych získal zkušenosti a rostl jako vývojář",
+
+  "my_stack": "Můj stack",
+  "tools_more": "Nástroje a další",
+
+  "projects": "Projekty",
+  "stack": "Stoh",
+  "view_code": "Zobrazit kód",
+  "see_live": "Zobrazit živě",
+
+  "mewee_description": "Webová stránka – Sociální síť (týmový absolventský projekt)",
+  "portfolio_description": "Webové stránky mého portfolia",
+  "wodota_description": "Můj hlavní projekt je vlastní webová stránka pro mód hry Dota 2, vytvořená zcela od nuly mnou samotným",
+
+  "meta_title": "Frontend | Portfolio",
+  "meta_description": "Portfolio Antona – frontendového vývojáře",
+  "og_title": "Anton | Portfolio frontendového vývojáře",
+  "og_description": "Prozkoumejte portfolio Antona — frontendového vývojáře"
+}
