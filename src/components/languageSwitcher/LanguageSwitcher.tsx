@@ -14,7 +14,7 @@ const LanguageSwitcher = () => {
         setOpen(false);
     };
 
-    const CurrentIcon = i18n.language === 'uk' ? "uk.svg" : "en.svg";
+    const CurrentIcon = i18n.language === 'uk' ? "/icon/languages/uk.svg" : "/icon/languages/en.svg";
 
     return (
         <div className={styles.div}>
@@ -27,11 +27,11 @@ const LanguageSwitcher = () => {
             {open && (
                 <div className={styles.list}>
                     <div className={styles.list_container} onClick={() => changeLanguage('en')}>
-                        <img className={styles.icon} src={"/en.svg"} alt={"en"} />
+                        <img className={styles.icon} src={"/icon/languages/en.svg"} alt={"en"} />
                         <div className={styles.lang_text}>EN</div>
                     </div>
                     <div className={styles.list_container} onClick={() => changeLanguage('uk')}>
-                        <img className={styles.icon} src={"/uk.svg"} alt={"uk"}/>
+                        <img className={styles.icon} src={"/icon/languages/uk.svg"} alt={"uk"}/>
                         <div className={styles.lang_text}>UA</div>
                     </div>
                 </div>

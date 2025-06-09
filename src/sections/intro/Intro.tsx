@@ -17,7 +17,7 @@ export const Intro = () => {
                     github
                 </button>
             </div>
-            <img src={"/intro.png"} alt={"Developer illustration"} className={styles.image}/>
+            <img src={"/images/intro/intro.webp"} alt={"Developer illustration"} className={styles.image}/>
         </section>
     );
 };
