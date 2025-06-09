@@ -6,19 +6,24 @@ import {About} from "../sections/about/About";
 import {TechStack} from "../sections/techStack/TechStack";
 import {Projects} from "../sections/projects/Projects";
 import {Footer} from "../components/footer/Footer";
+import HeadTags from "../components/headTags/HeadTags";
+import {HelmetProvider} from "react-helmet-async";
 
 function App() {
   return (
-    <div className={styles.app}>
-        <TopBar />
-        <main className={styles.container}>
-            <Intro />
-            <About />
-            <TechStack />
-            <Projects />
-        </main>
-        <Footer />
-    </div>
+      <HelmetProvider>
+          <div className={styles.app}>
+              <HeadTags/>
+              <TopBar/>
+              <main className={styles.container}>
+                  <Intro/>
+                  <About/>
+                  <TechStack/>
+                  <Projects/>
+              </main>
+              <Footer/>
+          </div>
+      </HelmetProvider>
   );
 }
 

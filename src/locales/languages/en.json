@@ -17,5 +17,10 @@
 
   "mewee_description": "Website - Social Network (Team Graduation Project)",
   "portfolio_description": "My Portfolio Website",
-  "wodota_description": "My main project is a custom Dota 2 game website, built entirely from scratch by myself."
+  "wodota_description": "My main project is a custom Dota 2 game website, built entirely from scratch by myself.",
+
+  "meta_title": "Frontend | Portfolio",
+  "meta_description": "Portfolio of Anton – frontend developer",
+  "og_title": "Anton | Frontend Developer Portfolio",
+  "og_description": "Explore the portfolio of Anton — frontend developer"
 }
