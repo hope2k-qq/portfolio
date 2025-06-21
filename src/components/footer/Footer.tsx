@@ -7,18 +7,23 @@ import { ReactComponent as DiplomaIcon } from '../../assets/icon/icon_diploma.sv
 export const Footer = () => {
     return (
         <footer className={styles.footer}>
-            <div className={styles.container_icon}>
+            <a href="https://github.com/hope2k-qq" target="_blank" rel="noopener noreferrer"
+               className={styles.container_icon}>
                 <GitHubIcon className={styles.icon}/>
-                <span className={styles.text}>GitHub</span >
-            </div>
-            <div className={styles.container_icon}>
+                <span className={styles.text}>GitHub</span>
+            </a>
+
+            <a href="/files/diploma.pdf" target="_blank" rel="noopener noreferrer" className={styles.container_icon}>
                 <DiplomaIcon className={styles.icon}/>
-                <span className={styles.text}>Diploma</span >
-            </div>
-            <div className={styles.container_icon}>
+                <span className={styles.text}>Diploma</span>
+            </a>
+
+            <a href="https://t.me/hope88k" target="_blank" rel="noopener noreferrer"
+               className={styles.container_icon}>
                 <TelegramIcon className={styles.icon}/>
-                <span className={styles.text}>Telegram</span >
-            </div>
+                <span className={styles.text}>Telegram</span>
+            </a>
         </footer>
+
     );
 };

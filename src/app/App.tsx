@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styles from  './app.module.scss';
 import {Intro} from "../sections/intro/Intro";
 import {TopBar} from "../components/topbar/TopBar";
@@ -10,6 +10,17 @@ import HeadTags from "../components/headTags/HeadTags";
 import {HelmetProvider} from "react-helmet-async";
 
 function App() {
+
+    useEffect(() => {
+        const path = window.location.pathname;
+
+        const isNotRoot = path !== '/';
+        const isNotFile = !path.match(/\.[a-zA-Z0-9]+$/);
+        if (isNotRoot && isNotFile) {
+            window.history.replaceState({}, '', '/');
+        }
+    }, []);
+
   return (
       <HelmetProvider>
           <div className={styles.app}>
